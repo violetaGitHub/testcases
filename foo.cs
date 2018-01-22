@@ -28,6 +28,7 @@ namespace GitMaster.LoginWindow
 
         internal void DownloadLicense(string teamInvitationCode)
         {
+            //Force conflict DST
             RunDownloadLicense(teamInvitationCode);
         }
 
