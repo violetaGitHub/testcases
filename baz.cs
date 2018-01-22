@@ -86,6 +86,23 @@ namespace Codice.CM.SemanticMerge.Gui.Merge
                 fileNavigator);
         }
 
+        internal void NotifyLicenseError(string message)
+        {
+            //CHANGE CASE 4 DST
+            Children.Clear();
+
+            Image mascotImage = ControlBuilder.CreateImage(
+                GitMasterImages.GetImage(
+                GitMasterImages.ImageName.IllustrationSignupError));
+            mascotImage.Width = 300;
+            mascotImage.Margin = new Thickness(50, 0, 0, 0);
+            mascotImage.HorizontalAlignment = HorizontalAlignment.Center;
+            mascotImage.VerticalAlignment = VerticalAlignment.Center;
+
+            WebEntriesPacker.AddMascotContentComponents(
+                this, mascotImage, CreateContentErrorPanel(message));
+        }
+
         internal Panel GetPanel()
         {
             if (mMainPanel == null)
