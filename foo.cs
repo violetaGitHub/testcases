@@ -143,7 +143,7 @@ namespace GitMaster.LoginWindow
         IGitMasterRestApi mRestApi;
         string mSuccessfulPanelTitle;
 
-        static readonly ILog mLog = LogManager.GetLogger("A");
+        static readonly ILog mLog = LogManager.GetLogger("B");
     }
 }
 
