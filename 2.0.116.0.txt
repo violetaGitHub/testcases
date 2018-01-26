@@ -1,4 +1,5 @@
-[Public] 2.0.116.0 - 2017/12/21
+[Public]
+2.0.116.0 - 2017/12/21
 
 [New]
 The JVM-based parsers (Java, C, C++) -as well as the external one- will now display more accurate error messages if an error is detected. Please have in mind that our bundled JVM-based parsers require JVM version 8 or higher!
