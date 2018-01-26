@@ -39,7 +39,7 @@ namespace GitMaster.LoginWindow
 
         internal void NotifyLicenseError(string message)
         {
-            Children.Clear();
+            Children.Clear();//change
 
             Image mascotImage = ControlBuilder.CreateImage(
                 GitMasterImages.GetImage(
