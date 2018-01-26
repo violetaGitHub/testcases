@@ -52,6 +52,7 @@ namespace GitMaster.LoginWindow
 
             WebEntriesPacker.AddMascotContentComponents(
                 this, mascotImage, CreateContentErrorPanel(message));
+            //DST
         }
 
         void GetLicenseButton_Click(object sender, RoutedEventArgs e)
