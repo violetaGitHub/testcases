@@ -135,5 +135,5 @@ namespace GitMaster.LoginWindow
 
         IGitMasterRestApi mRestApi;
         string mSuccessfulPanelTitle;
-    }
+    }//class
 }
