@@ -5,8 +5,8 @@
 The JVM-based parsers (Java, C, C++) -as well as the external one- will now display more accurate error messages if an error is detected. Please have in mind that our bundled JVM-based parsers require JVM version 8 or higher!
 
 [Bug]
-SemanticSCM: An "Index was outside the bounds of the array" exception was thrown, caused by a problem in how the semantic differences were concurrently calculated.
-Fixed.
+
+SemanticSCM: An "Index was outside the bounds of the array" exception was thrown, caused by a problem in how the semantic differences were concurrently calculated. Fixed.
 
 [Bug]
 An exception with the message "specified argument was out of the range of valid values" appeared sometimes if the user switched quickly between file diffs. Fixed.
