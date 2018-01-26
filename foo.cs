@@ -15,6 +15,8 @@ namespace GitMaster.LoginWindow
 {
     internal class WaitingLicensePanel : DockPanel
     {
+        static readonly ILog mLog = LogManager.GetLogger("B");
+
         internal WaitingLicensePanel(
             IGitMasterRestApi restApi,
             LoginWindowLicenseDownloader.INotifier licenseDownloaderNotifier)
