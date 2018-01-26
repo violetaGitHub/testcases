@@ -129,11 +129,19 @@ namespace GitMaster.LoginWindow
 
             return result;
         }
+
+        internal void SetSyntaxLanguage(Language language)
+        {
+            mContributorsView.SetSyntaxLanguage(language);
+            mResultView.SetSyntaxLanguage(language);
+        }
+
         TextBox mTeamInvitationCodeTextBox;
         Button mGetLicenseButton;
         LoginWindowLicenseDownloader.INotifier mLicenseDownloaderNotifier;
 
         IGitMasterRestApi mRestApi;
         string mSuccessfulPanelTitle;
-    }//class
+    }
 }
+

@@ -107,12 +107,6 @@ namespace Codice.CM.SemanticMerge.Gui.Merge
             mContributorsHeaderPanel.SetupHeadersColors();
         }
 
-        internal void SetSyntaxLanguage(Language language)
-        {
-            mContributorsView.SetSyntaxLanguage(language);
-            mResultView.SetSyntaxLanguage(language);
-        }
-
         internal void SetSrcTextBoxText(string srcText)
         {
             mContributorsView.SetSrcTextBoxText(srcText);
