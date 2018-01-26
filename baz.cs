@@ -109,7 +109,7 @@ namespace Codice.CM.SemanticMerge.Gui.Merge
 
         internal void SetSyntaxLanguage(Language language)
         {
-            mContributorsView.SetSyntaxLanguage(language);
+            mContributorsView.SetSyntaxLanguage(language);//comment
             mResultView.SetSyntaxLanguage(language);
         }
 
