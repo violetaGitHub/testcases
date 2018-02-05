@@ -41,7 +41,7 @@ namespace GitMaster.LoginWindow
         {
             //SRC
             Children.Clear();
-
+//
             Image mascotImage = ControlBuilder.CreateImage(
                 GitMasterImages.GetImage(
                 GitMasterImages.ImageName.IllustrationSignupError));
@@ -49,7 +49,7 @@ namespace GitMaster.LoginWindow
             mascotImage.Margin = new Thickness(50, 0, 0, 0);
             mascotImage.HorizontalAlignment = HorizontalAlignment.Center;
             mascotImage.VerticalAlignment = VerticalAlignment.Center;
-
+//
             WebEntriesPacker.AddMascotContentComponents(
                 this, mascotImage, CreateContentErrorPanel(message));
             //DST
