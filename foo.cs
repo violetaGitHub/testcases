@@ -102,7 +102,7 @@ namespace GitMaster.LoginWindow
         Panel CreateContentErrorPanel(string message)
         {
             StackPanel result = new StackPanel();
-
+//change CreateContentErrorPanel method at foo.cs
             TextBlock titleTextBlock = WebControlBuilder.CreateTitle(
                 GitMasterLocalization.GetString(
                     GitMasterLocalization.Name.WaitingLicensePanelErrorTitle));
