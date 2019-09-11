@@ -32,6 +32,23 @@ namespace GitMaster.LoginWindow
             mUserTextBox.Focus();
         }
 
+        internal void NotifyLicenseError(string message)
+        {
+            //CASE1 change
+            Children.Clear();
+
+            Image mascotImage = ControlBuilder.CreateImage(
+                GitMasterImages.GetImage(
+                GitMasterImages.ImageName.IllustrationSignupError));
+            mascotImage.Width = 300;
+            mascotImage.Margin = new Thickness(50, 0, 0, 0);
+            mascotImage.HorizontalAlignment = HorizontalAlignment.Center;
+            mascotImage.VerticalAlignment = VerticalAlignment.Center;
+
+            WebEntriesPacker.AddMascotContentComponents(
+                this, mascotImage, CreateContentErrorPanel(message));
+        }
+
         internal void Dispose()
         {
             mSignUpLinkLabel.HyperLink.Click -= SignUpLinkLabel_Click;
